@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OAC — About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" role="document" aria-label="OAC About Page">
+
+    <!-- Header -->
+    <header>
+      <div class="brand" aria-hidden="false">
+        <img src="logo.jpg" alt="OAC logo">
+        <div>
+          <h1>OAC</h1>
+          <p>Olympiad Awareness Campaign</p>
+        </div>
+      </div>
+
+      <button id="menuBtn" class="hamburger" aria-controls="mainOverlay" aria-expanded="false" aria-label="Open menu">
+        <span class="dash" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="content" aria-label="About content">
+        <div class="card">
+          <h2 style="margin-top:0;">About OAC</h2>
+          <p style="color:var(--muted); margin-bottom:16px;">
+            The Olympiad Awareness Campaign (OAC) is a student-centric initiative designed to inform and guide learners about national and international Olympiads.
+          </p>
+
+          <h3>Our Mission</h3>
+          <p style="color:var(--muted); margin-bottom:16px;">
+            To empower students with knowledge, resources, and mentorship that enhance problem-solving, critical thinking, and academic achievement through Olympiads.
+          </p>
+
+          <h3>What We Do</h3>
+          <ul style="font-size:14px; color:var(--muted); padding-left:18px; margin-bottom:16px;">
+            <li>Explain various Olympiad exams and eligibility criteria.</li>
+            <li>Provide structured study plans by grade and subject.</li>
+            <li>Share curated learning resources — books, videos, and practice materials.</li>
+            <li>Connect students with mentors and peer communities.</li>
+            <li>Ensure most resources are free or low-cost to maintain inclusion.</li>
+          </ul>
+
+          <h3>Vision</h3>
+          <p style="color:var(--muted); margin-bottom:16px;">
+            To make Olympiad participation accessible to all students and help build a generation of analytical thinkers and future innovators.
+          </p>
+
+          <div style="margin-top:18px;">
+            <a href="index.html" class="btn btn-outline">← Back to Home</a>
+          </div>
+        </div>
+
+        <!-- Sidebar: Quick Links -->
+        <aside>
+          <div class="card" style="margin-bottom:16px;">
+            <h4 style="margin:0 0 8px 0;">Quick Links</h4>
+            <ul style="font-size:14px; padding-left:18px; color:var(--muted);">
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <footer style="margin-top:24px; text-align:center; color:var(--muted); font-size:13px;">
+        © <span id="year"></span> OAC — Olympiad Awareness Campaign • Built for students
+      </footer>
+    </main>
+
+    <!-- Overlay menu -->
+    <div id="mainOverlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="panel" role="document" aria-labelledby="overlayTitle">
+        <button class="close" aria-label="Close menu" id="closeOverlay">✕</button>
+        <h2 id="overlayTitle" style="margin-top:0; margin-bottom:8px; font-family: 'Montserrat', sans-serif;">OAC Menu</h2>
+        <p style="color:rgba(255,255,255,0.9); margin-top:0; margin-bottom:16px;">Quick links — jump to a section or learn more</p>
+        <nav>
+          <a href="courses.html" class="menu-link">📘 Courses</a>
+          <a href="about.html" class="menu-link">ℹ️ About</a>
+          <a href="testimonials.html" class="menu-link">🗣️ Testimonials</a>
+          <a href="faqs.html" class="menu-link">❓ FAQs</a>
+          <a href="index.html" class="menu-link">🏠 Home</a>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

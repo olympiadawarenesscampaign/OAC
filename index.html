@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OAC — Olympiad Awareness Campaign</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" role="document" aria-label="OAC — Olympiad Awareness Campaign">
+
+    <!-- Header -->
+    <header>
+      <div class="brand" aria-hidden="false">
+        <img src="logo.jpg" alt="OAC logo placeholder">
+        <div>
+          <h1>OAC</h1>
+          <p>Olympiad Awareness Campaign</p>
+        </div>
+      </div>
+
+      <!-- Hamburger menu -->
+      <button id="menuBtn" class="hamburger" aria-controls="mainOverlay" aria-expanded="false" aria-label="Open menu">
+        <span class="dash" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <!-- Hero / Banner -->
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-left">
+          <h2 id="heroTitle">Unlock potential • Discover Olympiads • Build a brighter future</h2>
+          <p class="lead">
+            OAC informs students about national & international academic Olympiads, sharpening problem solving, critical thinking, and opening academic opportunities.
+          </p>
+
+          <div class="goals" aria-hidden="false">
+            <div class="goal"><strong>Awareness</strong><div style="font-size:12px;color:var(--muted)">What Olympiads exist and who can apply</div></div>
+            <div class="goal"><strong>Preparation</strong><div style="font-size:12px;color:var(--muted)">Tips, resources & practice paths</div></div>
+            <div class="goal"><strong>Opportunities</strong><div style="font-size:12px;color:var(--muted)">Scholarships, camps & higher studies</div></div>
+            <div class="goal"><strong>Community</strong><div style="font-size:12px;color:var(--muted)">Connect with mentors & peers</div></div>
+          </div>
+
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="window.location.href='courses.html'">Explore Courses</button>
+            <button class="btn btn-outline" onclick="document.getElementById('mainOverlay').classList.add('open')">Menu & Info</button>
+            <button class="ask-ai" title="Open ChatGPT" id="askAiBtn">
+              🔍 Ask AI
+              <span style="font-size:12px;color:var(--muted)">— ChatGPT</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="illustration">
+            <div class="big">🏆</div>
+            <p>Olympiads build critical thinking and open doors. Start small — dream big!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section: snippets -->
+      <section class="content" aria-label="Main content">
+
+        <!-- Left column: Primary content -->
+        <div class="card">
+          <h3 style="margin-top:0">Course highlights</h3>
+          <p style="color:var(--muted); margin-bottom:12px;">Sample course tracks for Olympiad aspirants.</p>
+
+          <div class="course-list">
+            <div class="item">
+              <div>
+                <strong>Foundations — Logical Thinking</strong>
+                <div style="font-size:12px;color:var(--muted)">Basics: puzzles, reasoning, shortcuts</div>
+              </div>
+              <div style="font-size:12px;color:var(--muted)">4–8 weeks</div>
+            </div>
+            <div class="item">
+              <div>
+                <strong>Subject Skill Boost</strong>
+                <div style="font-size:12px;color:var(--muted)">Math / Physics / Chemistry / Biology intensive</div>
+              </div>
+              <div style="font-size:12px;color:var(--muted)">8–12 weeks</div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="margin-top:12px;" onclick="window.location.href='courses.html'">See more</button>
+
+          <hr style="margin:16px 0;border:none;border-top:1px solid rgba(6,22,25,0.04)">
+
+          <h3>What we do</h3>
+          <p style="color:var(--muted)">We explain exam formats, share grade-specific study plans, provide resources, and connect learners with mentors. Most resources are free or low-cost.</p>
+
+          <hr style="margin:16px 0;border:none;border-top:1px solid rgba(6,22,25,0.04)">
+
+          <!-- Testimonial snippet -->
+          <div>
+            <h4 style="margin:0 0 12px 0">Student testimonial</h4>
+            <div class="testimonial">
+              <div class="avatar">A</div>
+              <div>
+                <div style="font-weight:700">Asha, Grade 10</div>
+                <div style="color:var(--muted);font-size:13px">"OAC helped me find the right practice plan — I improved my problem-solving and qualified for the regional round."</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" style="margin-top:8px;" onclick="window.location.href='testimonials.html'">See more</button>
+          </div>
+
+        </div>
+
+        <!-- Right column: About + FAQ snippet -->
+        <aside>
+          <div class="card" style="margin-bottom:16px;">
+            <h4 style="margin:0 0 8px 0">About OAC</h4>
+            <p style="color:var(--muted);font-size:14px;margin:0">
+              OAC is a student-centric campaign to increase awareness about Olympiads and their role in developing analytical skills. <br>
+              <button class="btn btn-primary" style="margin-top:8px;" onclick="window.location.href='about.html'">See more</button>
+            </p>
+          </div>
+
+          <div class="card faq">
+            <h4 style="margin:0 0 10px 0">FAQs</h4>
+
+            <div class="q">
+              <button class="qbtn" aria-expanded="false">Who can participate?<span>+</span></button>
+              <div class="ans" hidden>Students from middle school to senior secondary depending on the Olympiad; check eligibility.</div>
+            </div>
+
+            <div class="q">
+              <button class="qbtn" aria-expanded="false">How do I begin preparation?<span>+</span></button>
+              <div class="ans" hidden>Start with fundamentals and timed practice. Use past papers and short mock tests to improve speed and accuracy.</div>
+            </div>
+
+            <button class="btn btn-primary" style="margin-top:8px;" onclick="window.location.href='faqs.html'">See more</button>
+          </div>
+        </aside>
+      </section>
+
+      <footer style="margin-top:24px; text-align:center; color:var(--muted); font-size:13px;">
+        © <span id="year"></span> OAC — Olympiad Awareness Campaign • Built for students
+      </footer>
+    </main>
+
+    <!-- Overlay Menu -->
+    <div id="mainOverlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="panel" role="document" aria-labelledby="overlayTitle">
+        <button class="close" aria-label="Close menu" id="closeOverlay">✕</button>
+        <h2 id="overlayTitle" style="margin-top:0; margin-bottom:8px; font-family: 'Montserrat', sans-serif;">OAC Menu</h2>
+        <p style="color:rgba(255,255,255,0.9); margin-top:0; margin-bottom:16px;">Quick links — jump to a section or learn more</p>
+        <nav>
+          <a href="courses.html" class="menu-link">📘 Courses</a>
+          <a href="about.html" class="menu-link">ℹ️ About</a>
+          <a href="testimonials.html" class="menu-link">🗣️ Testimonials</a>
+          <a href="faqs.html" class="menu-link">❓ FAQs</a>
+        </nav>
+
+        <div style="margin-top:18px; display:flex; gap:10px; align-items:center;">
+          <button class="btn btn-primary" onclick="window.location.href='courses.html'">Explore Courses</button>
+          <button class="btn btn-outline" onclick="window.open('https://chat.openai.com/', 'ChatGPT', 'width=800,height=600,resizable=yes,scrollbars=yes,status=yes')">Ask AI</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
